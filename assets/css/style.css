@@ -2,10 +2,40 @@
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
+#divOne{
+	width: 170px;
+	border: 3px solid black;
+	margin: 15px;
+	padding: 15px;
+	background-color: #c97126;
+}
+#d1H1Header{
+	font-weight: bold;
+	font-size: 20pt;
+	color: white;
+	font-family: Verdana, Geneva, sans-serif;
+}
+#divTwo{
+	background-color: #fbe6cb;
+	width: 320px;
+	border: 3px solid black;
+	margin: 15px;
+	padding: 14px;
+}
+
+#d2PGameRules{
+	color: #41a53f;
+	font-style: normal;
+	font-family: Verdana, Geneva, sans-serif;
+}
 .targeScore{
+	background-color: #5bc97e;
 	margin: 10px;
 	padding: 10px;
+	width: 40px;
 	border: 3px solid black;
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: bold;
 }
 
 #cryGem1{
