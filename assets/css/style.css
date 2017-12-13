@@ -1,43 +1,42 @@
-#bodyBackground{
+.cBodyBackground{
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
-#divOne{
-	width: 170px;
+.cGameHeader{
+	width: 180px;
 	border: 3px solid black;
 	margin: 15px;
-	padding: 15px;
+	padding: 16px;
 	background-color: #c97126;
 }
-#d1H1Header{
+.cD1H1Header{
 	font-weight: bold;
 	font-size: 20pt;
 	color: white;
 	font-family: Verdana, Geneva, sans-serif;
 }
-#divTwo{
+.cGameRules{
 	background-color: #fbe6cb;
 	width: 320px;
 	border: 3px solid black;
 	margin: 15px;
 	padding: 14px;
 }
-
-#d2PGameRules{
+.cD2PGameRules{
 	color: #41a53f;
 	font-style: normal;
 	font-family: Verdana, Geneva, sans-serif;
 }
-.targeScore{
+.cTargeScore{
 	background-color: #5bc97e;
-	margin: 10px;
+	margin: 15px;
 	padding: 10px;
 	width: 85px;
 	border: 3px solid black;
 	font-family: Verdana, Geneva, sans-serif;
 	font-weight: bold;
 }
-#divThreeOne{
+.cGameWinLoss{
 	background-color: #4afdfe;
 	border: 3px solid black;
 	margin: 15px;
@@ -46,40 +45,25 @@
 	border: 2px;
 	font-family: Verdana, Geneva, sans-serif;
 }
-#cryGem1{
+.cCrystalsCollection img {
 	width: 10%;
-	margin: 5px;
-	float: left;
+	margin: 15px;
+	display: inline-block;
 	padding: 5px;
 	border: 2px solid black;
 }
-#cryGem2{
-	width: 10%;
-	margin: 5px;
-	float: left;
-	padding: 5px;
-	border: 2px solid black;
-}
-#cryGem3{
-	width: 10%;
-	margin: 5px;
-	float: left;
-	padding: 5px;
-	border: 2px solid black;
-}
-#cryGem4{
-	width: 10%;
-	margin: 5px;
-	float: left;
-	padding: 5px;
-	border: 2px solid black;
-}
-#divFive{
+.cGuessAmount{ 	
 	background-color: #2ba296;
 	border: 2px solid black;
 	color: white;
-	width: 70px;
+	width: 95px;
+	padding: 20px;
 	margin: 15px;
 	border: 3px;
-	float: bottom;
+	font-size: 10pt;
+	font-family: Verdana, Geneva, sans-serif;
+}
+.cLblGuess{
+	font-weight: bold;
+	font-size: 14pt;
 }
