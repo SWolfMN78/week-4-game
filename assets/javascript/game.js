@@ -56,7 +56,6 @@
 		if (PlayerGuess === targetScore) {
 			//when the player wins runs through the same information.
 			alert("You win!!");
-			playAudio();
 			gameWins += 1;
 			$("#d31WinsScore").text(gameWins);
 			//reload the screen for the new game.
@@ -65,19 +64,5 @@
 			//reset the player information to the base
 			PlayerGuess = 0;
 			$("#d5LblGuessedTotal").text(PlayerGuess);
-
 		}
-	}
-
-	var result = $('#result');
-
-	result.hide().html('<%= j @result %>').fadeIn(250);
-	playAudio(result);
-
-	function playAudio(result){
-		if (result.html() === "Yes"){
-
-			$('#yes-audio').trigger('play');
-		}
-		
 	}
