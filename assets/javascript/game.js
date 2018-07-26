@@ -3,7 +3,8 @@
 	var gameWins = 0; //total wins
 	var gamelosses = 0; //total losses
 	var targetScore = 0; //this will be the aimed number
-	var audio = new Audio('assets/music/FinalFantasyVII-VictoryFanfare.mp3');
+	var audioWin = new Audio('assets/music/FinalFantasyVII-VictoryFanfare.mp3');
+	var audioFail = new Audio('assets/music/Sad_Trombone-Joe_Lamb-665429450.mp3');
 
 	//jQuery Text will go in here.
 	$().ready(function() {
@@ -44,6 +45,8 @@
 	        //update the player on how they did and adjust their score.
 	        alert("You've exceeded the number! Try again!!");
 	        gamelosses += 1;
+	        audioFail.play();
+	        audioFail.loop = false;
 	        $("#d31LossScore").text(gamelosses);
 	        //reload the screen for the new game.
 	        randomNumberGen();
@@ -58,9 +61,14 @@
 	        alert("You win!!");
 	        gameWins += 1;
 	        //play victory music for winning the found.
-	        audio.loop = false;
-	        audio.play();
-	        //set up to only play the song for 
+	        //set up to only play the song for 4 seconds then stop.
+	        setTimeout(function() {
+	            audioWin.play();
+	            setTimeout(function() {
+	                audioWin.pause();
+	                audioWin.currentTime = 0;
+	            }, 3500); //cut off at this time.
+	        }, 0000); //start playing right away
 	        $("#d31WinsScore").text(gameWins);
 	        //reload the screen for the new game.
 	        randomNumberGen();
