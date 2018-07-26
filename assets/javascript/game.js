@@ -45,6 +45,7 @@
 	        //update the player on how they did and adjust their score.
 	        alert("You've exceeded the number! Try again!!");
 	        gamelosses += 1;
+	        //play the fail sounds waa-waa
 	        audioFail.play();
 	        audioFail.loop = false;
 	        $("#d31LossScore").text(gamelosses);

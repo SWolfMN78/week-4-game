@@ -6,65 +6,77 @@
     <title>Crystal Catcher Game</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
 </head>
 
 <body id="iBodyBackground" class="cBodyBackground" background="assets/images/Gemstone_Background.jpg">
-    <!-- set up the HTML here.  Place all information into div's to break it up and make it easily accessable -->
 
-    <!-- header information -->
-    <div class="cMainBody">
-        <div id="iDivOne" class="cGameHeader">
-            <h1 id="iD1H1Header" class="cD1H1Header">Crystal Collector!</h1>
-        </div>
-
-        <!-- Game Rules -->
-        <div id="iDivTwo" class="cGameRules">
-            <p id="iD2PGameRules" class="cD2PGameRules">
-                You will be given a random number at the start of the game.
-                <br>
-                <br> There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
-                <br>
-                <br> You win the game by matching your total score to the randomly generated number displayed. You lose the game if your total exceeds the shown number.
-                <br>
-                <br> The value of each crystal is hidden from you, but if you lick on it you can get a strong idea of the number.
-                <br>
-                <br> Each time when the game starts, the game will change the values of the crstyals. Good luck, have fun!
+    <div class="jumbotron pt-3 pb-3 m-3">
+        <div class="container">
+            <h1 class="display-4 text-center">Crystal Collector!</h1>
+            <hr>
+            <p class="lead text-center">
+                Can you get the perfect score and collect the crystals?!
             </p>
-        </div>
-
-        <!-- Target number info -->
-        <div id="iDivThree" class="cTargeScore">
-            <h5 id="iD3H5TargetScore">Your Target Score : <label id="d3LblTargetScore" value=0>0</label></h5>
-        </div>
-        <div id="iDivThreeOne" class="cGameWinLoss">
-            <label id="d31Wins" class="cD31Wins">Wins: <label id="d31WinsScore" value=0>0</label></label>
-            <label id="d31Loss" class="cD31Loss">Losses: <label id="d31LossScore" value=0>0</label></label>
-        </div>
-
-        <!-- Crystl pictures will go here - be sure to find some neat images -->
-        <div id="divFour" class="cCrystalsCollection">
-            <img id="iCryGem1" class="cCryGem1" src="assets/images/Gem1.jpg" value=0>
-            <img id="iCryGem2" class="cCryGem1" src="assets/images/Gem2.jpg" value=0>
-            <img id="iCryGem3" class="cCryGem1" src="assets/images/Gem3.jpg" value=0>
-            <img id="iCryGem4" class="cCryGem1" src="assets/images/Gem4.jpg" value=0>
-        </div>
-
-        <!-- Player score goes here -->
-        <div id="iDivFive" class="cGuessAmount">
-            <label id="iD5Guessed" class="cLblGuess">Your Score: </label><label id="d5LblGuessedTotal" value=0>0</label>
         </div>
     </div>
 
+    <div class="container">
+        <!-- header information -->
+        <div class="cMainBody">
+
+            <div class="card">
+                <p class="cD2PGameRules">
+                    <h5 class="card-title font-weight-bold">Game Rules:</h5>
+                    You will be given a random number at the start of the game.
+                    <br> There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+                    <br> You win the game by matching your total score to the randomly generated number displayed. You lose the game if your total exceeds the shown number.
+                    <br> The value of each crystal is hidden from you, but if you lick on it you can get a strong idea of the number.
+                    <br> Each time when the game starts, the game will change the values of the crstyals. Good luck, have fun!
+                </p>
+            </div>
+
+            <!-- Target number info -->
+            <div id="iDivThree" class="cTargeScore">
+                <h5 id="iD3H5TargetScore">Your Target Score : <label id="d3LblTargetScore" value=0>0</label></h5>
+            </div>
+            <div id="iDivThreeOne" class="cGameWinLoss">
+                <label id="d31Wins" class="cD31Wins">Wins: <label id="d31WinsScore" value=0>0</label></label>
+                <label id="d31Loss" class="cD31Loss">Losses: <label id="d31LossScore" value=0>0</label></label>
+            </div>
+
+            <!-- Crystl pictures will go here - be sure to find some neat images -->
+            <div id="divFour" class="cCrystalsCollection">
+                <img id="iCryGem1" class="cCryGem1" src="assets/images/Gem1.jpg" value=0>
+                <img id="iCryGem2" class="cCryGem1" src="assets/images/Gem2.jpg" value=0>
+                <img id="iCryGem3" class="cCryGem1" src="assets/images/Gem3.jpg" value=0>
+                <img id="iCryGem4" class="cCryGem1" src="assets/images/Gem4.jpg" value=0>
+            </div>
+
+            <!-- Player score goes here -->
+            <div id="iDivFive" class="cGuessAmount">
+                <label id="iD5Guessed" class="cLblGuess">Your Score: </label><label id="d5LblGuessedTotal" value=0>0</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p class="text-white small mb-0">Copyright &copy; Shawn Jonas Wolf 2018</p>
+        </div>
+    </footer>
 
     <!-- Link to my jQuery information -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <!-- Link for Javascripting information - This is also where my 
-		jQuery info is stored-->
+    <!-- Link for Javascripting information - This is also where my jQuery info is stored-->
     <script type="text/javascript" src="assets/javascript/game.js"></script>
 
+    <!--Local CSS files-->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </body>
 
 </html>
