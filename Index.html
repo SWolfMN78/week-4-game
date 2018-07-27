@@ -25,44 +25,59 @@
     <div class="container">
         <!-- header information -->
         <div class="cMainBody">
-
-            <div class="card">
-                <p class="cD2PGameRules">
-                    <h5 class="card-title font-weight-bold">Game Rules:</h5>
-                    You will be given a random number at the start of the game.
-                    <br> There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
-                    <br> You win the game by matching your total score to the randomly generated number displayed. You lose the game if your total exceeds the shown number.
-                    <br> The value of each crystal is hidden from you, but if you lick on it you can get a strong idea of the number.
-                    <br> Each time when the game starts, the game will change the values of the crstyals. Good luck, have fun!
-                </p>
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <p class="cD2PGameRules">
+                            <h5 class="card-title font-weight-bold">Game Rules:</h5>
+                            You will be given a random number at the start of the game.
+                            <br> There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+                            <br> You win the game by matching your total score to the randomly generated number displayed. You lose the game if your total exceeds the shown number.
+                            <br> The value of each crystal is hidden from you, but if you lick on it you can get a strong idea of the number.
+                            <br> Each time when the game starts, the game will change the values of the crstyals. Good luck, have fun!
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <!-- Target number info -->
-            <div id="iDivThree" class="cTargeScore">
-                <h5 id="iD3H5TargetScore">Your Target Score : <label id="d3LblTargetScore" value=0>0</label></h5>
-            </div>
-            <div id="iDivThreeOne" class="cGameWinLoss">
-                <label id="d31Wins" class="cD31Wins">Wins: <label id="d31WinsScore" value=0>0</label></label>
-                <label id="d31Loss" class="cD31Loss">Losses: <label id="d31LossScore" value=0>0</label></label>
-            </div>
-
-            <!-- Crystl pictures will go here - be sure to find some neat images -->
-            <div id="divFour" class="cCrystalsCollection">
-                <img id="iCryGem1" class="cCryGem1" src="assets/images/Gem1.jpg" value=0>
-                <img id="iCryGem2" class="cCryGem1" src="assets/images/Gem2.jpg" value=0>
-                <img id="iCryGem3" class="cCryGem1" src="assets/images/Gem3.jpg" value=0>
-                <img id="iCryGem4" class="cCryGem1" src="assets/images/Gem4.jpg" value=0>
+            <div class="row">
+                <!-- Target number info -->
+                <div id="iDivThree" class="col cTargeScore">
+                    <h5 id="iD3H5TargetScore">Your Target Score : <label id="d3LblTargetScore" value=0>0</label></h5>
+                </div>
+                <div id="iDivThreeOne" class="col cGameWinLoss">
+                    <label id="d31Wins" class="cD31Wins">Wins: <label id="d31WinsScore" value=0>0</label></label>
+                    <label id="d31Loss" class="cD31Loss">Losses: <label id="d31LossScore" value=0>0</label></label>
+                </div>
+                <!-- Player score goes here -->
+                <div id="iDivFive" class="col cGuessAmount">
+                    <label id="iD5Guessed" class="cLblGuess">Your Score: </label><label id="d5LblGuessedTotal" value=0> 0</label>
+                </div>
             </div>
 
-            <!-- Player score goes here -->
-            <div id="iDivFive" class="cGuessAmount">
-                <label id="iD5Guessed" class="cLblGuess">Your Score: </label><label id="d5LblGuessedTotal" value=0>0</label>
+            <div class="row">
+                <!-- Crystl pictures will go here - be sure to find some neat images -->
+                <div id="divFour" class="cCrystalsCollection">
+                    <div class="col">
+                        <img id="iCryGem1" class="cCryGem1" src="assets/images/Gem1.jpg" value=0>
+                    </div>
+                    <div class="col">
+                        <img id="iCryGem2" class="cCryGem1" src="assets/images/Gem2.jpg" value=0>
+                    </div>
+                    <div class="col">
+                        <img id="iCryGem3" class="cCryGem1" src="assets/images/Gem3.jpg" value=0>
+                    </div>
+                    <div class="col">
+                        <img id="iCryGem4" class="cCryGem1" src="assets/images/Gem4.jpg" value=0>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="footer text-center">
+    <footer class="footer sticky text-center">
         <div class="container">
             <p class="text-white small mb-0">Copyright &copy; Shawn Jonas Wolf 2018</p>
         </div>
