@@ -43,7 +43,11 @@
 	    //if over - then handle the game over
 	    if (PlayerGuess > targetScore) {
 	        //update the player on how they did and adjust their score.
-	        alert("You've exceeded the number! Try again!!");
+
+	        $('#loseModal').on('shown.bs.modal', function() {
+	            $('#myInput').trigger('focus');
+	        });
+
 	        gamelosses += 1;
 	        //play the fail sounds waa-waa
 	        audioFail.play();
@@ -59,7 +63,11 @@
 	    //if spot on then handle game won
 	    if (PlayerGuess === targetScore) {
 	        //when the player wins runs through the same information.
-	        alert("You win!!");
+
+	        $('#winModal').on('shown.bs.modal', function() {
+	            $('#myInput').trigger('focus');
+	        });
+
 	        gameWins += 1;
 	        //play victory music for winning the found.
 	        //set up to only play the song for 4 seconds then stop.
